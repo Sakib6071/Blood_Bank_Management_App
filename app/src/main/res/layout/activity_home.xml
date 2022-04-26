@@ -126,6 +126,103 @@
             </LinearLayout>
 
 
+            <LinearLayout
+                android:layout_marginTop="70dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/aboutUs"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="160dp"
+                    android:layout_height="70dp"
+                    android:backgroundTint="#00C30505"
+                    android:text="About US"
+                    android:textAlignment="center"
+                    android:textColor="@color/red"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:strokeColor="@color/red"
+                    app:strokeWidth="2dp"
+                    android:layout_marginRight="10dp"/>
+
+
+
+
+                <Button
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/contactUs"
+                    android:layout_width="160dp"
+                    android:layout_height="70dp"
+                    android:text="Contact Us"
+                    android:textAlignment="center"
+                    android:textColor="@color/red"
+                    android:textSize="18sp"
+                    android:backgroundTint="#00C30505"
+                    android:textStyle="bold"
+                    app:strokeColor="@color/red"
+                    app:strokeWidth="2dp"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@color/red"
+                >
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/short_icon"
+                android:background="@color/black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Life String"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Version : 1.0.0"
+                        android:textSize="15sp"
+                        android:textColor="#7E7878"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Copyright © 2022 | All rights reserved"
+                        android:textSize="15sp"
+                        android:textColor="#7E7878"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Binary Clan"
+                        android:textSize="15sp"
+                        android:textColor="#7E7878"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
 
 
 
