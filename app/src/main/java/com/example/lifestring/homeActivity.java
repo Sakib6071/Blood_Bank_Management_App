@@ -6,9 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class homeActivity extends AppCompatActivity {
-    Button seeDonor, requestButton,timelineButton,bloodBankButton;
+    Button seeDonor, requestButton,timelineButton,bloodBankButton,contactUs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +19,7 @@ public class homeActivity extends AppCompatActivity {
         requestButton = findViewById(R.id.requestButton);
         timelineButton=findViewById(R.id.timelineButton);
         bloodBankButton=findViewById(R.id.bloodBankButton);
+        contactUs=findViewById(R.id.contactUs);
         Intent intent = getIntent();
         String x = intent.getStringExtra("userName");
 
@@ -50,6 +52,14 @@ public class homeActivity extends AppCompatActivity {
                 Intent intent3= new Intent(homeActivity.this,bloodBank.class);
                 intent3.putExtra("userName", x);
                 startActivity(intent3);
+            }
+        });
+
+        contactUs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent9 = new Intent(homeActivity.this,contact.class);
+                startActivity(intent9);
             }
         });
 

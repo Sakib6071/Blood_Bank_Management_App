@@ -57,8 +57,9 @@ public class bloodBankReceive extends AppCompatActivity {
                     Boolean checkUpdateBloodRequest = DB.updateBloodRequestStorage(_userName,_bloodType, _address,_reason , _quantity);
                     if (checkUpdateBloodRequest == true) {
                         Toast.makeText(getApplicationContext(), "Request Successful", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(bloodBankReceive.this,bloodBank.class);
-                        startActivity(intent);
+                        address.setText("");
+                        reason.setText("");
+                        quantity.setText("");
                     } else {
                         Toast.makeText(getApplicationContext(), "Request Data is not Successful", Toast.LENGTH_SHORT).show();
 
