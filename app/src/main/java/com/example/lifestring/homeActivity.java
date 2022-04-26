@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class homeActivity extends AppCompatActivity {
-    Button seeDonor, requestButton,timelineButton,bloodBankButton,contactUs;
+    Button seeDonor, requestButton,timelineButton,bloodBankButton,contactUs,aboutUS;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +20,7 @@ public class homeActivity extends AppCompatActivity {
         timelineButton=findViewById(R.id.timelineButton);
         bloodBankButton=findViewById(R.id.bloodBankButton);
         contactUs=findViewById(R.id.contactUs);
+        aboutUS=findViewById(R.id.aboutUs);
         Intent intent = getIntent();
         String x = intent.getStringExtra("userName");
 
@@ -60,6 +61,13 @@ public class homeActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent9 = new Intent(homeActivity.this,contact.class);
                 startActivity(intent9);
+            }
+        });
+        aboutUS.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent10 = new Intent(homeActivity.this, com.example.lifestring.aboutUS.class);
+                startActivity(intent10);
             }
         });
 
